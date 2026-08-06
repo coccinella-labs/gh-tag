@@ -1,0 +1,32 @@
+name: "gh-tag"
+description: "Create annotated semver tags with consistent messages from CI."
+author: "libnudget"
+branding:
+  icon: "tag"
+  color: "green"
+
+inputs:
+  token:
+    description: "GitHub token with access to the repository."
+    required: true
+    default: ${{ github.token }}
+  tag:
+    description: "Semver tag to create (the v prefix is added if missing)."
+    required: true
+  message:
+    description: "Message for the annotated tag. Defaults to the tag name."
+    required: false
+  check-if-exists:
+    description: "Fail if the tag already exists instead of skipping it."
+    required: false
+    default: "false"
+
+outputs:
+  tag:
+    description: "The normalized tag that was created or already existed."
+  created:
+    description: "'true' when the tag was created, 'false' when it already existed."
+
+runs:
+  using: "node24"
+  main: "dist/src/index.js"
