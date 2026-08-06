@@ -1,5 +1,7 @@
 # gh-tag
 
+[![Release](https://img.shields.io/github/v/release/libnudget/gh-tag?logo=github&label=latest)](https://github.com/libnudget/gh-tag/releases)
+
 A GitHub Action that creates annotated semver tags with consistent
 messages from CI.
 
@@ -11,7 +13,7 @@ to turn a push into a fully tagged release.
 ## Usage
 
 ```yaml
-- uses: libnudget/gh-tag@v0.1.0
+- uses: libnudget/gh-tag@main
   with:
     token: ${{ secrets.GITHUB_TOKEN }}
     tag: 0.2.0
@@ -21,7 +23,7 @@ to turn a push into a fully tagged release.
 To fail the workflow when the tag already exists instead of skipping it:
 
 ```yaml
-- uses: libnudget/gh-tag@v0.1.0
+- uses: libnudget/gh-tag@main
   with:
     token: ${{ secrets.GITHUB_TOKEN }}
     tag: 0.2.0
