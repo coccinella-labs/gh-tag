@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Coccinella-Labs/gh-tag/main/.github/assets/thumbnail.png" alt="gh-tag" width="100%">
+</p>
+
 # gh-tag
 
 [![Release](https://img.shields.io/github/v/release/libnudget/gh-tag?logo=github&label=latest)](https://github.com/libnudget/gh-tag/releases)
