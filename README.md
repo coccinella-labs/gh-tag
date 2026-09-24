@@ -4,20 +4,20 @@
 
 # gh-tag
 
-[![Release](https://img.shields.io/github/v/release/libnudget/gh-tag?logo=github&label=latest)](https://github.com/libnudget/gh-tag/releases)
+[![Release](https://img.shields.io/github/v/release/coccinella-labs/gh-tag?logo=github&label=latest)](https://github.com/coccinella-labs/gh-tag/releases)
 
 A GitHub Action that creates annotated semver tags with consistent
 messages from CI.
 
 gh-tag checks whether the tag already exists, creates it as an annotated
 tag pointing at the current commit, and reports whether it was created.
-It pairs with [release-notes](https://github.com/libnudget/release-notes)
+It pairs with [release-notes](https://github.com/coccinella-labs/release-notes)
 to turn a push into a fully tagged release.
 
 ## Usage
 
 ```yaml
-- uses: libnudget/gh-tag@main
+- uses: coccinella-labs/gh-tag@main
   with:
     token: ${{ secrets.GITHUB_TOKEN }}
     tag: 0.2.0
@@ -27,7 +27,7 @@ to turn a push into a fully tagged release.
 To fail the workflow when the tag already exists instead of skipping it:
 
 ```yaml
-- uses: libnudget/gh-tag@main
+- uses: coccinella-labs/gh-tag@main
   with:
     token: ${{ secrets.GITHUB_TOKEN }}
     tag: 0.2.0
