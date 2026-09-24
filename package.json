@@ -1,5 +1,5 @@
 {
-  "name": "@libnudget/gh-tag",
+  "name": "@coccinella-labs/gh-tag",
   "version": "0.1.0",
   "description": "Create annotated semver tags with consistent messages from CI.",
   "license": "MIT",
