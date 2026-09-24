@@ -1,6 +1,6 @@
 name: "gh-tag"
 description: "Create annotated semver tags with consistent messages from CI."
-author: "libnudget"
+author: "coccinella-labs"
 branding:
   icon: "tag"
   color: "green"
